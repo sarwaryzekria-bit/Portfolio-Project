@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to Our Restaurant!</title>
+        <meta name="author" content="Zekria Sarwary">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="Images/logo.png" rel="icon">
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            function toggleMenu() {
+                const menu = document.getElementById("mobileMenu");
+                menu.classList.toggle("show");
+            }
+        </script>
+    </head>
+    <body>
+        <header class="header">
+                <img src="Images/brand.png" alt="logo" id="logo">
+                <nav class="nav">
+                    <ul class="ul" id="mobileMenu">
+                        <li><a href="#home" class="scrollto">Home</a></li>
+                        <li><a href="#about" class="scrollto">About</a></li>
+                        <li><a href="#menu" class="scrollto">Menu</a></li>
+                        <li><a href="#gallery" class="scrollto">Gallery</a></li>
+                        <li><a href="#contact" class="scrollto">Contact</a></li>
+                    </ul>
+                    <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+                </nav>
+                <a href="#book-a-table"><button id="button">Book A Table</button></a>
+        </header>
+        <main>
+            <section id="home">
+                <div class="container">
+                    <h1>Welcome to<span class="borcelle">Borcelle!</span></h1>
+                    <p>"Indulge in Culinary Delights: Where Every Bite is a Passport to Falvors of Amore."</p>
+                    <div class="buttons">
+                        <a href="#menu"><button class="button">Our Menu</button></a>
+                        <a href="#book-a-table"><button class="button">Book A Table</button></a>
+                    </div>
+                </div>
+            </section>
+            <section id="about">
+                <h2>About Us</h2>
+                <div class="container">
+                    <div class="sub-container">
+                        <img src="Images/About/site.jpg" alt="background-image">
+                        <div class="mini-container">
+                            <p>Welcome to Borcelle Restaurant, where Culinary artistry meets an unparalleled dining experience. We create unforgetable that tantalize taste buds and ignite senses. Our journey redefines dining, envisioning a place where sizzling expertly dishes echo guests' excitements. Nestled in people's hearts, Borcelle celebrates innovation and tradition in gastronomic heaven.</p>
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="sub-container-1">
+                        <div class="mini-container-1">
+                            <p>The story of Borcelle Restaurant is one of culinary innovation and creating lasting dining memories. Founded in 1997, it aimed to revolutionize how people enjoy food. Culinary enthusiasts established Borcelle, driven by a collective love for exquisit cuisine and an ambition to elevate dining. Starting humbly, Borcelle gained recognition for its dedication to using the best ingredients.</p>
+                            <button>Learn More</button>
+                        </div>
+                        <img src="Images/About/plate.jpg" alt="background-image">
+                    </div>
+                    <hr>
+                    <div class="sub-container-2">
+                        <img src="Images/About/unknown.jpg" alt="background-image">
+                        <div class="mini-container-2">
+                            <p>Indulge in a symphony of flavors that pay homage to Italy's diverse regions. From the rich, heartly dishes of Tuscany to the vibrant and zesty creations of Southern Italy.</p>
+                            <button>Learn More</button>
+                        </div>
+                        <img src="Images/About/butter_bread.jpg" alt="background-image">
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id="menu">
+                <h2>Check our tasty Menu!</h2>
+                <div class="menu-buttons text-center border-bottom pb-1 mb-4">
+                    <button class="bt" data-bs-target="#menuCarousel" data-bs-slide-to="0">Show All</button>
+                    <button class="bt" data-bs-target="#menuCarousel" data-bs-slide-to="1">Beverages</button>
+                    <button class="bt" data-bs-target="#menuCarousel" data-bs-slide-to="2">Lunch</button>
+                    <button class="bt" data-bs-target="#menuCarousel" data-bs-slide-to="3">Dinner</button>
+                </div>
+                <div class="container">
+                    <div id="menuCarousel" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="inline">
+                                            <h5>Classic Lemonade</h5>
+                                            <h5>$3.50</h5>
+                                        </div>
+                                        <p>Freshly squeezed lemonade with a hint of sweetness.</p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="inline">
+                                            <h5>Grilled Chicken Sandwich</h5>
+                                            <h5>$11.50</h5>
+                                        </div>
+                                        <p>Juicy grilled chicken breast topped with lettuce, tomato, and mayo.</p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="inline">
+                                            <h5>Iced Caramel Macchiato</h5>
+                                            <h5>$4.75</h5>
+                                        </div>
+                                        <p>Chilled espresso combined with creamy milk and rich caramel syrup.</p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="inline">
+                                            <h5>Tropical Fruit Smoothie</h5>
+                                            <h5>$5.25</h5>
+                                        </div>
+                                        <p>A refreshing blend of pineapple, mango, and banana.</p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="inline">
+                                            <h5>Classic Caeser Salad</h5>
+                                            <h5>$8.95</h5>
+                                        </div>
+                                        <p>Crisp romaine lettuce, garlic croutons, parmesan and Caesar dressing.</p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="inline">
+                                            <h5>Mediterranean Wrap</h5>
+                                            <h5>$10.25</h5>
+                                        </div>
+                                        <p>Hummus, feta cheese, Kalamata olives, roasted red peppers and fresh greens.</p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="inline">
+                                            <h5>Grilled Filet Mignon</h5>
+                                            <h5>$25.95</h5>
+                                        </div>
+                                        <p>Tender filet mignon steak served with garlic mashed potatoes.</p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="inline">
+                                            <h5>Seafood Linguine</h5>
+                                            <h5>$20.50</h5>
+                                        </div>
+                                        <p>Shrimp, scallops and clams tossed with linguine in a white wine garlic sauce.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-5">
+                                        <div class="inline">
+                                            <h5>Iced Caramel Macchiato</h5>
+                                            <h5>$4.75</h5>
+                                        </div>
+                                        <p>Chilled espresso combined with creamy milk and rich caramel syrup.</p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="inline">
+                                            <h5>Tropical Fruit Smoothie</h5>
+                                            <h5>$5.25</h5>
+                                        </div>
+                                    <p>A refreshing blend of pineapple, mango, and banana.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-5">
+                                        <div class="inline">
+                                            <h5>Classic Caeser Salad</h5>
+                                            <h5>$8.95</h5>
+                                        </div>
+                                        <p>Crisp romaine lettuce, garlic croutons, parmesan and Caesar dressing.</p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="inline">
+                                            <h5>Mediterranean Wrap</h5>
+                                            <h5>$10.25</h5>
+                                        </div>
+                                    <p>Hummus, feta cheese, Kalamata olives, roasted red peppers and fresh greens.</p>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-5">
+                                        <div class="inline">
+                                            <h5>Grilled Filet Mignon</h5>
+                                            <h5>$25.95</h5>
+                                        </div>
+                                        <p>Tender filet mignon steak served with garlic mashed potatoes.</p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="inline">
+                                            <h5>Seafood Linguine</h5>
+                                            <h5>$20.50</h5>
+                                        </div>
+                                    <p>Shrimp, scallops and clams tossed with linguine in a white wine garlic sauce.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id="gallery">
+                <h2>Some Photos From Our Restaurant!</h2>
+                <div class="menu-buttons text-center border-bottom pb-1 mb-4">
+                    <button class="bt active" data-bs-target="#galleryCarousel" data-bs-slide-to="0">Food</button>
+                    <button class="bt" data-bs-target="#galleryCarousel" data-bs-slide-to="1">Ambience</button>
+                </div>
+                <div class="container">
+                    <div id="galleryCarousel"class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row" id="container">
+                                    <div class="col-md-4">
+                                        <img src="Images/Gallery/mixed-salad.jpg" alt="mixed-salad" class="food">
+                                        <hr>
+                                        <img src="Images/Gallery/salad.jpg" alt="salad" class="food">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="Images/Gallery/fruits.jpg" alt="fruits" class="food">
+                                        <hr>
+                                        <img src="Images/Gallery/ramen.jpg" alt="ramen" class="food">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="Images/Gallery/meat.jpg" alt="meat" class="food">
+                                        <hr>
+                                        <img src="Images/Gallery/macarony.jpg" alt="macarony" class="food">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <img src="Images/Gallery/verticle-site.jpg" alt="verticle-image" class="verticle-image">
+                                    </div>
+                                    <div class="col-md-5" id="ambience">
+                                        <img src="Images/Gallery/tables.jpg" alt="horizontal-site" class="images">
+                                        <hr>
+                                        <img src="Images/Gallery/verticle-tables.jpg" alt="verticle-tables" class="images">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <img src="Images/Contact/location.png" alt="location" id="location">
+                <div class="container">
+                    <div class="match">
+                        <div class="contact-info">
+                            <div class="phone">
+                                <img src="Images/Contact/Logos/phone.png" alt="phone" class="instructions">
+                                <div class="merge">
+                                    <h3>Phone:</h3>
+                                    <p>(555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="phone">
+                                <img src="Images/Contact/Logos/area.png" alt="location" class="instructions">
+                                <div class="merge">
+                                    <h3>Location:</h3>
+                                    <p>123 Main Street, Cityville, State 12345, USA</p>
+                                </div>
+                            </div>
+                            <div class="phone">
+                                <img src="Images/Contact/Logos/open-hours.png" alt="open-hours" class="instructions">
+                                <div class="merge">
+                                    <h3>Open Hours:</h3>
+                                    <p>Monday-Sunday: 9:00 AM - 11:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="phone">
+                                <img src="Images/Contact/Logos/email.png" alt="email" class="instructions">
+                                <div class="merge">
+                                    <h3>Email:</h3>
+                                    <p>sarwaryzekria@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form">
+                            <form>
+                                <input type="text" id="name" placeholder="Your Name" required/>
+                                <input type="email" id="email" placeholder="Your Email" required/>
+                                <br>
+                                <input type="text" id="subject" placeholder="Subject" required/>
+                                <br>
+                                <textarea placeholder="Message" id="textarea" required></textarea>
+                                <br>
+                                <button class="submit">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id="book-a-table">
+                <h2>Book a Table</h2>
+                <div class="container">
+                    <form class="book">
+                        <div class="info">
+                            <input type="text" id="client-name" placeholder="Name" required/>
+                            <input type="email" id="client-email" placeholder="Email" required/>
+                            <input type="phone" id="number" placeholder="Phone" required/>
+                        </div>
+                        <div class="num">
+                            <input type="date" id="date" required/>
+                            <input type="time" id="time" required/>
+                            <input type="number" id="people" placeholder="No. of People" required/>
+                        </div>
+                        <textarea placeholder="Message" id="text" required></textarea>
+                        <br>
+                        <button class="bt">Book a Table</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="maintainer">
+                    <div class="first-side">
+                        <h2>Borcelle</h2>
+                        <div class="icons">
+                            <a href="#" target="_blank"><img src="Images/Footer/facebook.svg" alt="facebook" class="icon" title="Coming Soon!"></a>
+                            <a href="https://wa.me/+93783894332"target="_blank"><img src="Images/Footer/whatsapp.svg" alt="whatsapp" class="icon" title="WhatsApp"></a>
+                            <a href="#" target="_blank"><img src="Images/Footer/twitter-x.svg" alt="twitter-x" class="icon" title="Coming Soon!"></a>
+                            <a href="https://youtube.com/@ZekriaSarwary" target="_blank"><img src="Images/Footer/youtube.svg" alt="youtube" class="icon" title="YouTube"></a>
+                            <a href="https://github.com/sarwaryzekria-bit" target="_blank"><img src="Images/Footer/github.svg" alt="github" class="icon" title="GitHub"></a>
+                        </div>
+                    </div>
+                    <div class="second-side">
+                        <h2>Useful Links</h2>
+                        <div class="links">
+                            <a href="#home">Home</a>
+                            <a href="#about">About Us</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
