@@ -31,6 +31,12 @@ input:invalid {
     gap: 2rem;
     padding-top: 1.6rem;
 }
+.ul li {
+    transition: transform 0.3s;
+}
+.ul li:hover {
+    transform: scale(1.09);
+}
 .ul li a {
     text-decoration: none;
     color: white;
@@ -41,7 +47,7 @@ input:invalid {
 .menu-btn {
     display: none;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 980px) {
     .header > a {
         display: none;
     }
@@ -49,15 +55,35 @@ input:invalid {
         display: block;
         position: absolute;
         top: 100%;
-        right: 14%;
+        right: 0%;
         margin: 0;
         padding: 1rem;
         text-align: center;
-        background-color: #CDA45E;
-        border-radius: 0.8rem;
+        background-color: #24241db4;
+        width: 100%;
+        height: 285px;
+    }
+    #button.show {
+        display: block;
+        height: 40px;
+        width: 88%;
+        position: fixed;
+        text-align: center; 
+        top: 270px;
+    }
+    #button.show button {
+        padding: 2%;
+        padding-left: 20%;
+        padding-right: 20%;
     }
     .ul {
         display: none;
+    }
+    li {
+        text-align: left;
+        padding-left: 6%;
+        padding-top: 10px;
+        border-bottom: 1px solid #6C6C68;
     }
     .menu-btn {
         display: block;
@@ -78,24 +104,30 @@ input:invalid {
     .mini-container-2 button {
         display: none;
     }
+    .text {
+        display: none;
+    }
     .first-side {
         text-align: center;
     } 
     .second-side {
         display: none;
     }
+    #button {
+        display: none; 
+    }
 }
-#button {
+#button button {
     background-color: transparent;
-    color: #CDA45E;
     border-color: #CDA45E;
     border-style: solid;
     transition: background-color 0.2s;
     padding: 0.4vw 1.5vw 0.4vw 1.5vw;
     border-radius: 1.5rem;
     margin: 1.5vw 0 1vw 0;
+    color: #CDA45E;
 }
-#button:hover {
+#button button:hover {
     background-color: #CDA45E;
     color: white;
 }
@@ -154,7 +186,7 @@ input:invalid {
 .sub-container img {
     height: 30%;
     width:  45%;
-    border-radius: 1rem;
+    border-radius: 1.5vw;
 }
 .sub-container {
     display: flex;
@@ -352,12 +384,21 @@ input:invalid {
 .food {
     height: 45%;
     width: 100%;
-    border-radius: 1rem;
+    padding: 2%;
+    border-radius: 1.5rem;
+    transition: transform 0.3s;
+}
+.food:hover {
+    transform: translateY(-5px);
 }
 .verticle-image {
     height: 90%;
     width: 100%;
     border-radius: 1rem;
+    transition: transform 0.3s; 
+}
+.verticle-image:hover {
+    transform: translateY(-5px);
 }
 #ambience {
     justify-content: center;
@@ -369,6 +410,10 @@ input:invalid {
     height: 43%;
     width: 100%;
     border-radius: 1rem;
+    transition: transform 0.3s;
+}
+.images:hover {
+    transform: translateY(-5px);
 }
 
 /* Contact Us Section */
