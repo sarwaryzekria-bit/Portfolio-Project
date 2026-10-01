@@ -11,8 +11,8 @@
         <script src="js/bootstrap.min.js"></script>
         <script>
             function toggleMenu() {
-                const menu = document.getElementById("mobileMenu");
-                menu.classList.toggle("show");
+                document.getElementById("mobileMenu").classList.toggle('show');
+                document.getElementById("button").classList.toggle('show');
             }
         </script>
     </head>
@@ -29,12 +29,12 @@
                     </ul>
                     <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
                 </nav>
-                <a href="#book-a-table"><button id="button">Book A Table</button></a>
+                <a href="#book-a-table" id="button"><button >Book A Table</button></a>
         </header>
         <main>
             <section id="home">
                 <div class="container">
-                    <h1>Welcome to<span class="borcelle">Borcelle!</span></h1>
+                    <h1>Welcome to <span class="borcelle">Borcelle!</span></h1>
                     <p>"Indulge in Culinary Delights: Where Every Bite is a Passport to Falvors of Amore."</p>
                     <div class="buttons">
                         <a href="#menu"><button class="button">Our Menu</button></a>
@@ -48,14 +48,14 @@
                     <div class="sub-container">
                         <img src="Images/About/site.jpg" alt="background-image">
                         <div class="mini-container">
-                            <p>Welcome to Borcelle Restaurant, where Culinary artistry meets an unparalleled dining experience. We create unforgetable that tantalize taste buds and ignite senses. Our journey redefines dining, envisioning a place where sizzling expertly dishes echo guests' excitements. Nestled in people's hearts, Borcelle celebrates innovation and tradition in gastronomic heaven.</p>
+                            <p class="text">Welcome to Borcelle Restaurant, where Culinary artistry meets an unparalleled dining experience. We create unforgetable that tantalize taste buds and ignite senses. Our journey redefines dining, envisioning a place where sizzling expertly dishes echo guests' excitements. Nestled in people's hearts, Borcelle celebrates innovation and tradition in gastronomic heaven.</p>
                             <button>Learn More</button>
                         </div>
                     </div>
                     <hr>
                     <div class="sub-container-1">
                         <div class="mini-container-1">
-                            <p>The story of Borcelle Restaurant is one of culinary innovation and creating lasting dining memories. Founded in 1997, it aimed to revolutionize how people enjoy food. Culinary enthusiasts established Borcelle, driven by a collective love for exquisit cuisine and an ambition to elevate dining. Starting humbly, Borcelle gained recognition for its dedication to using the best ingredients.</p>
+                            <p class="text">The story of Borcelle Restaurant is one of culinary innovation and creating lasting dining memories. Founded in 1997, it aimed to revolutionize how people enjoy food. Culinary enthusiasts established Borcelle, driven by a collective love for exquisit cuisine and an ambition to elevate dining. Starting humbly, Borcelle gained recognition for its dedication to using the best ingredients.</p>
                             <button>Learn More</button>
                         </div>
                         <img src="Images/About/plate.jpg" alt="background-image">
@@ -64,7 +64,7 @@
                     <div class="sub-container-2">
                         <img src="Images/About/unknown.jpg" alt="background-image">
                         <div class="mini-container-2">
-                            <p>Indulge in a symphony of flavors that pay homage to Italy's diverse regions. From the rich, heartly dishes of Tuscany to the vibrant and zesty creations of Southern Italy.</p>
+                            <p class="text">Indulge in a symphony of flavors that pay homage to Italy's diverse regions. From the rich, heartly dishes of Tuscany to the vibrant and zesty creations of Southern Italy.</p>
                             <button>Learn More</button>
                         </div>
                         <img src="Images/About/butter_bread.jpg" alt="background-image">
