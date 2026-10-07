@@ -9,12 +9,7 @@
         <link href="Images/logo.png" rel="icon">
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script>
-            function toggleMenu() {
-                document.getElementById("mobileMenu").classList.toggle('show');
-                document.getElementById("button").classList.toggle('show');
-            }
-        </script>
+        
     </head>
     <body>
         <header class="header">
@@ -33,7 +28,7 @@
         </header>
         <main>
             <section id="home">
-                <div class="container">
+                <div class="container-1">
                     <h1>Welcome to <span class="borcelle">Borcelle!</span></h1>
                     <p>"Indulge in Culinary Delights: Where Every Bite is a Passport to Falvors of Amore."</p>
                     <div class="buttons">
@@ -43,31 +38,27 @@
                 </div>
             </section>
             <section id="about">
-                <h2>About Us</h2>
+                <h2><b>About Us</b></h2>
                 <div class="container">
                     <div class="sub-container">
                         <img src="Images/About/site.jpg" alt="background-image">
                         <div class="mini-container">
-                            <p class="text">Welcome to Borcelle Restaurant, where Culinary artistry meets an unparalleled dining experience. We create unforgetable that tantalize taste buds and ignite senses. Our journey redefines dining, envisioning a place where sizzling expertly dishes echo guests' excitements. Nestled in people's hearts, Borcelle celebrates innovation and tradition in gastronomic heaven.</p>
-                            <button>Learn More</button>
+                            <p><b>Welcome to Borcelle Restaurant</b>, where Culinary artistry meets an unparalleled dining experience. We create unforgetable that tantalize taste buds and ignite senses. Our journey redefines dining, envisioning a place where sizzling expertly dishes echo guests' excitements.</p>
                         </div>
                     </div>
                     <hr>
                     <div class="sub-container-1">
-                        <div class="mini-container-1">
-                            <p class="text">The story of Borcelle Restaurant is one of culinary innovation and creating lasting dining memories. Founded in 1997, it aimed to revolutionize how people enjoy food. Culinary enthusiasts established Borcelle, driven by a collective love for exquisit cuisine and an ambition to elevate dining. Starting humbly, Borcelle gained recognition for its dedication to using the best ingredients.</p>
-                            <button>Learn More</button>
-                        </div>
                         <img src="Images/About/plate.jpg" alt="background-image">
+                        <div class="mini-container-1">
+                            <p><b>The story of Borcelle Restaurant</b> is one of culinary innovation and creating lasting dining memories. Founded in 1997, it aimed to revolutionize how people enjoy food. Culinary enthusiasts established Borcelle, driven by a collective love for exquisit cuisine and an ambition to elevate dining.</p>
+                        </div>
                     </div>
                     <hr>
                     <div class="sub-container-2">
                         <img src="Images/About/unknown.jpg" alt="background-image">
                         <div class="mini-container-2">
-                            <p class="text">Indulge in a symphony of flavors that pay homage to Italy's diverse regions. From the rich, heartly dishes of Tuscany to the vibrant and zesty creations of Southern Italy.</p>
-                            <button>Learn More</button>
+                            <p class="text"><b>Indulge in a symphony of flavors</b> that pay homage to Italy's diverse regions. From the rich, heartly dishes of Tuscany to the vibrant and zesty creations of Southern Italy.</p>
                         </div>
-                        <img src="Images/About/butter_bread.jpg" alt="background-image">
                     </div>
                 </div>
             </section>
@@ -75,7 +66,7 @@
             <section id="menu">
                 <h2>Check our tasty Menu!</h2>
                 <div class="menu-buttons text-center border-bottom pb-1 mb-4">
-                    <button class="bt" data-bs-target="#menuCarousel" data-bs-slide-to="0">Show All</button>
+                    <button class="bt focus" data-bs-target="#menuCarousel" data-bs-slide-to="0">Show All</button>
                     <button class="bt" data-bs-target="#menuCarousel" data-bs-slide-to="1">Beverages</button>
                     <button class="bt" data-bs-target="#menuCarousel" data-bs-slide-to="2">Lunch</button>
                     <button class="bt" data-bs-target="#menuCarousel" data-bs-slide-to="3">Dinner</button>
@@ -284,14 +275,14 @@
                         </div>
                         <div class="form">
                             <form>
-                                <input type="text" id="name" placeholder="Your Name" required/>
-                                <input type="email" id="email" placeholder="Your Email" required/>
+                                <input type="text" id="name" placeholder="Name" required/>
+                                <input type="email" id="email" placeholder="Email" required/>
                                 <br>
                                 <input type="text" id="subject" placeholder="Subject" required/>
                                 <br>
-                                <textarea placeholder="Message" id="textarea" required></textarea>
+                                <textarea placeholder="Message" id="textArea" required></textarea>
                                 <br>
-                                <button class="submit">Send Message</button>
+                                <button id="submit">Send Message</button>
                             </form>
                         </div>
                     </div>
@@ -314,13 +305,13 @@
                         </div>
                         <textarea placeholder="Message" id="text" required></textarea>
                         <br>
-                        <button class="bt">Book a Table</button>
+                        <button class="bt" id="bt">Book a Table</button>
                     </form>
                 </div>
             </section>
         </main>
         <footer>
-            <div class="container">
+            <div class="container-2">
                 <div class="maintainer">
                     <div class="first-side">
                         <h2>Borcelle</h2>
@@ -335,13 +326,14 @@
                     <div class="second-side">
                         <h2>Useful Links</h2>
                         <div class="links">
-                            <a href="#home">Home</a>
-                            <a href="#about">About Us</a>
-                            <a href="#contact">Contact</a>
+                            <a href="#home" class="useful">Home</a>
+                            <a href="#about" class="useful">About Us</a>
+                            <a href="#contact" class="useful">Contact</a>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
+        <script src="app.js"></script>
     </body>
 </html>
