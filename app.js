@@ -58,3 +58,16 @@ function bookTable() {
         alert('Please check the details carefully and try again!');
     };
 };
+
+
+const hiddenElements = document.querySelectorAll('.hidden');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('showLayout');
+        }
+    });
+});
+hiddenElements.forEach((element) => {
+    observer.observe(element);
+});
